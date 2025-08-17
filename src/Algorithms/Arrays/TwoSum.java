@@ -11,7 +11,7 @@ public class TwoSum {
 		Integer[] results = twoSum(nums, target);
 		System.out.println(Arrays.toString(results));
 	}
-	// Brute-Force approach
+	// Brute-Force approach : O(n²)
 	private static Integer[] twoSum1(Integer[] nums, Integer target) {
 		for(int i = 0; i < nums.length - 1; i++) {
 			for(int j = 0; j < nums.length; j++) {
@@ -23,7 +23,7 @@ public class TwoSum {
 		return new Integer[] {-1,-1};
 	}
 	
-	// Optimized approach
+	// Optimized approach : O(n)
 	private static Integer[] twoSum(Integer[] nums, int target) {
 		Map<Integer, Integer> hashMap = new HashMap<Integer, Integer>();
 		for(int i = 0; i < nums.length; i++) {
